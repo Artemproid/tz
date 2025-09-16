@@ -1,0 +1,38 @@
+.nav {
+  margin-bottom: 30px;
+}
+
+.menuList {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 25px;
+}
+
+.menuItem {
+  margin: 0;
+}
+
+.menuLink {
+  text-decoration: none;
+  color: #4A5568;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+.menuLink:hover {
+  color: #2D3748;
+}
+
+.menuLink_active {
+  color: #4A90E2;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .menuList {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+} 

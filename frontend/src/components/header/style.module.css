@@ -1,0 +1,183 @@
+.header {
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header__container {
+  padding: 15px 0;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  color: #4A90E2;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header__buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__buttons_right {
+  display: flex;
+  gap: 10px;
+}
+
+.header__button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #4A90E2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.header__button:hover {
+  background: #357ABD;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__nav__container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__link {
+  color: #000000;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.header__link:hover {
+  color: #4A90E2;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: #000000;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+  z-index: 1;
+  border-radius: 4px;
+  top: 100%;
+  left: 0;
+  margin-top: 5px;
+  padding: 5px 0;
+}
+
+.show {
+  display: block;
+}
+
+/* Добавим отступ, чтобы можно было навести на меню */
+.dropdown::after {
+  content: '';
+  position: absolute;
+  height: 20px;
+  left: 0;
+  right: 0;
+  top: 100%;
+}
+
+/* Стили для пунктов меню */
+.dropdownLink {
+  display: block;
+  padding: 10px 20px;
+  color: #000000;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.dropdownLink:hover {
+  background-color: #f5f5f5;
+}
+
+.dropdownButton {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #E53935;
+  transition: background-color 0.2s;
+}
+
+.dropdownButton:hover {
+  background-color: #f5f5f5;
+}
+
+.headerLogo {
+  height: 40px;
+}
+
+.createButton {
+  background-color: #4A90E2;
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.createButton:hover {
+  background-color: #357ABD;
+}
+
+.referencesButton {
+  background-color: #4A90E2;
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.referencesButton:hover {
+  background-color: #357ABD;
+}

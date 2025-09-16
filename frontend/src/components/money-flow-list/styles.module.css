@@ -1,0 +1,115 @@
+.container {
+  margin: 20px 0;
+}
+
+.table {
+  width: 100%;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 150px 150px 100px 1fr;
+  background: #f5f5f5;
+  font-weight: bold;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 150px 150px 100px 1fr;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.row:hover {
+  background-color: #f5f5f5;
+}
+
+.cell {
+  padding: 12px;
+  text-align: left;
+}
+
+.income {
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+.expense {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.pageButton {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background: #4a90e2;
+  color: white;
+  cursor: pointer;
+}
+
+.pageButton:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.pageInfo {
+  font-size: 14px;
+  color: #666;
+}
+
+.dateRange {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.dateInput {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.filterButton {
+  padding: 8px 16px;
+  background-color: #4A90E2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.filterButton:hover {
+  background-color: #357ABD;
+} 

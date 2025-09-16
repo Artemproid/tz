@@ -1,0 +1,91 @@
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .details {
+    margin: 20px 0;
+  }
+  
+  .row {
+    display: flex;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .label {
+    width: 150px;
+    flex-shrink: 0;
+    font-weight: bold;
+    color: #666;
+  }
+  
+  .value {
+    flex: 1;
+    word-break: break-word;
+    white-space: pre-wrap;
+  }
+  
+  .income {
+    color: #2ecc71;
+    font-weight: bold;
+  }
+  
+  .expense {
+    color: #e74c3c;
+    font-weight: bold;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+  }
+  
+  .button.edit {
+    background: #4a90e2;
+    color: white;
+  }
+  
+  .button.edit:hover {
+    background: #357abd;
+  }
+  
+  .button.delete {
+    background: #e74c3c;
+    color: white;
+  }
+  
+  .button.delete:hover {
+    background: #c0392b;
+  }
+  
+  /* Обычная кнопка "Назад к списку" */
+  .button:not(.edit):not(.delete) {
+    background: #95a5a6;
+    color: white;
+  }
+  
+  .button:not(.edit):not(.delete):hover {
+    background: #7f8c8d;
+  }
+  
+  .error {
+    color: #e74c3c;
+    text-align: center;
+    margin: 20px;
+  }

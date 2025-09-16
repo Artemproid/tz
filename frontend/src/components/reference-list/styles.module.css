@@ -1,0 +1,154 @@
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.createButton {
+  padding: 8px 16px;
+  background-color: #4A90E2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.list {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.item:hover {
+  background-color: #f8f9fa;
+}
+
+.itemFields {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex: 1;
+}
+
+.itemField {
+  font-size: 16px;
+  min-width: 150px;
+  flex: 1;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.itemField:first-child {
+  font-weight: 500;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-left: 10px;
+}
+
+.actionButton {
+  padding: 6px 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: opacity 0.2s;
+}
+
+.actionButton:hover {
+  opacity: 0.7;
+}
+
+.actionButton:first-child {
+  color: #4CAF50;
+}
+
+.actionButton:last-child {
+  color: #f44336;
+}
+
+/* Стили для режима редактирования */
+.item.editing {
+  background-color: #f8f9fa;
+}
+
+.input, .select {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  max-width: 200px;
+  margin-right: 10px;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+.emptyMessage {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+.newItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 20px;
+}
+
+.newItem .actions {
+  align-self: flex-end;
+}
+
+.headerRow {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+  border-radius: 6px 6px 0 0;
+  font-weight: 500;
+}
+
+.headerCell {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.headerCell:last-child {
+  flex: 0 0 100px;
+  text-align: right;
+} 
