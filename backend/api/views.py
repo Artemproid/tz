@@ -88,6 +88,9 @@ class MyUserViewSet(UserViewSet):
 class MoneyFlowFilter(filters.FilterSet):
     """Фильтр для денежных операций."""
     created_at = filters.DateFilter(field_name='created_at')
+    created_at_after = filters.DateFilter(field_name='created_at', lookup_expr='gte')
+    created_at_before = filters.DateFilter(field_name='created_at', lookup_expr='lte')
+    
     status = filters.CharFilter(
         field_name='status__name',
         lookup_expr='icontains'
@@ -107,7 +110,7 @@ class MoneyFlowFilter(filters.FilterSet):
 
     class Meta:
         model = MoneyFlow
-        fields = ['created_at', 'status', 'type', 'category', 'subcategory']
+        fields = ['created_at', 'created_at_after', 'created_at_before', 'status', 'type', 'category', 'subcategory']
 
 
 class StatusViewSet(viewsets.ModelViewSet):

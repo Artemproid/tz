@@ -13,7 +13,7 @@ const HomePage = () => {
 
   const loadData = async (currentPage, currentFilters) => {
     try {
-      const data = await api.getMoneyFlows(currentPage, currentFilters)
+      const data = await api.getMoneyFlows({ page: currentPage, ...currentFilters })
       setMoneyFlows(data.results)
       setTotalPages(Math.ceil(data.count / 10))
     } catch (err) {

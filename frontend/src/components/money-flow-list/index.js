@@ -43,11 +43,11 @@ const MoneyFlowList = ({
 
   const getFilteredData = async () => {
     try {
-      const params = new URLSearchParams(filters);
-      if (dateRange.startDate) params.append('start_date', dateRange.startDate);
-      if (dateRange.endDate) params.append('end_date', dateRange.endDate);
+      const newFilters = { ...filters };
+      if (dateRange.startDate) newFilters.created_at_after = dateRange.startDate;
+      if (dateRange.endDate) newFilters.created_at_before = dateRange.endDate;
       
-      onFilterChange(Object.fromEntries(params));
+      onFilterChange(newFilters);
     } catch (error) {
       console.error('Error applying filters:', error);
     }
